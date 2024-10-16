@@ -21,14 +21,14 @@ public class App {
 
         sortByEdad(personas);
 
-        System.out.println("Personas ordenadas por edad:");
+        System.out.println("\nPersonas ordenadas por edad:");
         printArray(personas);
 
         System.out.println("\nIngrese la edad a buscar:");
         int edadBuscada = sc.nextInt();
         int indice = findByEdad(personas, edadBuscada);
         if (indice != -1) {
-            System.out.println("Persona encontrada: " + personas[indice]);
+            System.out.println("\nLa persona con la edad " + personas[indice]+" se llama: ");
         } else {
             System.out.println("No se encontró ninguna persona con la edad ingresada.");
         }
